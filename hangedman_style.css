@@ -1,0 +1,348 @@
+#left_side
+{
+	width: 180px;
+	height: 590px;
+	float: left;
+	background-color: #2b2521;
+	text-align: center;
+	font-size: 20px;
+	padding: 5px 0;
+}
+
+#write_clue_text,
+#write_category_text
+{
+	width: 160px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 15px;
+	outline: none;
+	margin-top: 5px;
+}
+
+#write_clue_text:focus,
+#write_category_text:focus
+{
+	border: 2px solid #a5cda5;
+	background-color: #e3f7e3;
+	color: #428c42;
+}
+
+#write_ok_submit
+{
+	display: inline-block;
+	background-color: #36b03c;
+	font-size: 40px;
+	color: #ffffff;
+	border: 2px solid #14901a;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	margin-top: 8px;
+}
+
+#write_cancel_submit
+{
+	display: inline-block;
+	background-color: #96989b;
+	font-size: 40px;
+	color: #c5c6c9;
+	border: 2px solid #96989b;
+	border-radius: 5px;
+	cursor: default;
+	outline: none;
+	margin-top: 8px;
+}
+
+#choose_category
+{
+	border-top: 1px dashed white;
+}
+
+#nav
+{
+	padding: 10px 0;
+}
+
+ol
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 16px;
+	height: 40px;
+	line-height: 200%;
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ol > li
+{
+	background-color: #79967b;
+	float: left;
+	width: 180px;
+	height: 40px;
+	text-align: center;
+}
+
+.checkboxy
+{
+	width: 180px;
+	height: 37px;
+	cursor: pointer;
+}
+
+ol > li:hover
+{
+	background-color: #4e634f;
+	color: #ffffff;
+}
+
+ol > li > ul
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	height: 40px;
+	display: none;
+	text-align: left;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+	background-color: #79967b;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #1d261d;
+}
+
+#content
+{
+	color: #000000;
+	float: left;
+	width: 1000px;
+	min-height: 600px;
+	margin-top: 0;
+	text-align: center;
+	background-image: url("img/bg.bmp");
+}
+
+#right_side
+{
+	float: left;
+	min-width: 160px;
+	min-height: 600px;
+}
+
+#board
+{
+	width: 1000px;
+	text-align: center;
+	font-size: 48px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#guess_rectangle
+{
+	background-color: #dda154;
+	opacity: 0.8;
+	width: 1000px;
+	height: 57px;
+	margin-top: 5px;
+}
+
+#left_square
+{
+	float: left;
+	width: 100px;
+	height: 1px;
+}
+
+#guess
+{
+	float: left;
+	width: 800px;
+}
+
+#change_clue
+{
+	float: left;	
+	font-size: 16px;
+	background-color: #e0d20b;
+	margin-right: 5px;
+	margin-top: 5px;
+	color: #38372f;
+	border: 1px dashed #38372f;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#change_clue:hover
+{
+	background-color: #efeb07;	
+}
+
+#change_clue_text
+{
+	width: 93px;
+	height: 35px;
+	padding: 5px 0;
+	transition: transform 0.3s ease-in-out;
+}
+
+#change_clue_text:hover
+{
+	transform: scale(1.3);
+}
+
+#left_clues
+{
+	float: left;
+	text-align: left;
+	margin-right: 430px;
+	margin-left: 20px;
+}
+
+#score
+{
+	float: left;
+	text-align: right;
+}
+
+input[type=text]
+{
+	width: 200px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	outline: none;
+	margin-right: 5px;
+}
+
+input[type=text]:focus
+{
+	border: 2px solid #a5cda5;
+	background-color: #e3f7e3;
+	color: #428c42;
+}
+
+input[type=submit]
+{
+	width: 200px;
+	background-color: #36b03c;
+	font-size: 20px;
+	color: #ffffff;
+	border: 2px solid #14901a;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:hover
+{
+	background-color: #3bbf41;
+	border: 2px solid #36923c;
+}
+
+input[type=submit]:focus
+{
+	background-color: #25a02b;
+	border: 2px solid #03800a;
+}
+
+#gallows
+{
+	float: left;
+	width: 481px;
+	min-height: 325px;
+	text-align: center;
+	margin-left: 0px;
+	margin-top: 73px;
+}
+
+#alphabet
+{
+	float: left;
+	width: 481px;
+	min-height: 325px;
+	text-align: center;
+	margin-top: 45px;
+	margin-left: 15px;
+	border-radius: 20px;
+}
+
+.letter
+{
+	width: 32px;
+	height: 31px;
+	text-align: center;
+	padding: 9px;
+	margin: 6px;
+	color: #494c4c;
+	border: 3px solid #494c4c;
+	float: left;
+	cursor: pointer;
+	border-radius: 15px;
+	background-color: #9cadad;
+	transition: transform 0.2s ease-in-out;
+}
+
+.letter:hover
+{
+	background: #222222;
+	color: #ffffff;
+	border: 3px solid #ffffff;
+	transform: scale(1.1);
+}
+
+#reset
+{
+	font-size: 60px;
+	cursor: pointer;
+	color: #000000;
+	margin-top: 52px;
+}
+
+#reset2
+{
+	font-size: 60px;
+	cursor: pointer;
+	color: #000000;
+	margin-top: 0;
+}
+
+#reset:hover,
+#reset2:hover
+{
+	color: white;
+}
+
+#green_string
+{
+	color: #10ff00;
+}
+
+#red_string
+{
+	color: #db1e1e;
+}
+
+#clue
+{
+	font-size: 22px;
+}

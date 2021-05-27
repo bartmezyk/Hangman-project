@@ -1,0 +1,102 @@
+<! DOCTYPE>
+
+<head land="pl">
+	<title>Gra w wisielca</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="#"/>
+	<meta name="keywords" content="#"/>
+	<meta name="author" content="#"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+	
+	<link rel="stylesheet" href="main_style.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="hangedman_style.css" />
+	<link rel="stylesheet" type="text/css" href="css/fontello.css" />
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	
+	<script src="java.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+	<div id="container">
+	
+		<div id="logo">
+			<div id="clock"></div>
+			<div id="nothingSquare"></div>
+			<div id="stringLogo">GRA W WISIELCA</div>
+			<div id="soundSquare" onclick="dzwieki()"><i class="icon-volume-high"></i></div>
+			<div id="refresh" onclick="location.reload()"><i class="icon-arrows-cw"></i></div>
+			<div style="clear: both"></div>
+		</div>
+		
+		
+		<div id="left_side">
+			
+			<span id="napis_wpisz_kategorie">Wpisz hasło<br/>i kategorię dla przeciwnika:</span>
+			<input maxlength="40" id="write_clue_text" type="text" placeholder="Wpisz_hasło" onfocus="this.placeholder=''" onblur="this.placeholder='Wpisz_hasło'" />
+			<input maxlength="55" id="write_category_text" type="text" placeholder="Wpisz_kategorię" onfocus="this.placeholder=''" onblur="this.placeholder='Wpisz_kategorię'" />
+			<div id="write_ok_submit" onmouseover="ziel_przyc_po_najechaniu()" onmouseout="ziel_przyc_po_zjechaniu()" onclick="napisz_haslo()"/><i class="icon-ok"></i></div>
+			<div id="write_cancel_submit"/><i class="icon-cancel"></i></div>
+			<div style="clear: both"></div>
+			
+			<br/><br/>
+			<div id="choose_category">
+			
+				<div id="nav" >
+					<ol>
+						<li id="wybor_kategorii">Wybór kategorii
+							<ul>
+								<li><div id="c0" onmouseover="checkbox_po_najechaniu(0)" onmouseout="checkbox_po_zjechaniu(0)" class="checkboxy" onclick="zmien_dostepnosc_kategorii(0)"><input id="check0" type="checkbox" checked style="cursor: pointer" />Kitchen (<span id="hasel0"></span>)</div></li>
+								<li><div id="c1" onmouseover="checkbox_po_najechaniu(1)" onmouseout="checkbox_po_zjechaniu(1)" class="checkboxy" onclick="zmien_dostepnosc_kategorii(1)"><input id="check1" type="checkbox" checked style="cursor: pointer" />Human Body (<span id="hasel1"></span>)</div></li>
+								<li><div id="c2" onmouseover="checkbox_po_najechaniu(2)" onmouseout="checkbox_po_zjechaniu(2)" class="checkboxy" onclick="zmien_dostepnosc_kategorii(2)"><input id="check2" type="checkbox" checked style="cursor: pointer" />Fruit (<span id="hasel2"></span>)</div></li>
+								<li><div id="c3" onmouseover="checkbox_po_najechaniu(3)" onmouseout="checkbox_po_zjechaniu(3)" class="checkboxy" onclick="zmien_dostepnosc_kategorii(3)"><input id="check3" type="checkbox" checked style="cursor: pointer" />Soft drinks (<span id="hasel3"></span>)</div></li>
+								<li><div id="c4" onmouseover="checkbox_po_najechaniu(4)" onmouseout="checkbox_po_zjechaniu(4)" class="checkboxy" onclick="zmien_dostepnosc_kategorii(4)"><input id="check4" type="checkbox" checked style="cursor: pointer" />Alcohol. drinks (<span id="hasel4"></span>)</div></li>
+								<li><div id="c5" onmouseover="checkbox_po_najechaniu(5)" onmouseout="checkbox_po_zjechaniu(5)" class="checkboxy" onclick="zmien_dostepnosc_kategorii(5)"><input id="check5" type="checkbox" checked style="cursor: pointer" />Bathroom (<span id="hasel5"></span>)</div></li>
+								<li><div id="c6" onmouseover="checkbox_po_najechaniu(6)" onmouseout="checkbox_po_zjechaniu(6)" class="checkboxy" onclick="zmien_dostepnosc_kategorii(6)"><input id="check6" type="checkbox" checked style="cursor: pointer" />GTA SA (<span id="hasel6"></span>)</div></li>
+								<li><div id="c7" onmouseover="checkbox_po_najechaniu(7)" onmouseout="checkbox_po_zjechaniu(7)" class="checkboxy" onclick="zmien_dostepnosc_kategorii(7)"><input id="check7" type="checkbox" checked style="cursor: pointer" />Vegetables (<span id="hasel7"></span>)</div></li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		
+		<div id="content">
+		
+			<div id="left_clues"></div>
+			<div id="score"></div>
+			<div style="clear: both"></div>
+			
+			<div id="board"></div>
+			<div id="category"></div>
+
+			<div id="guess_rectangle">
+				<div id="left_square"></div>
+				<div id="guess"></div>
+				<div id="change_clue" onclick="zmien_haslo()">
+					<div id="change_clue_text">Zmień<br/>hasło</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+
+			
+			<div id="gallows"></div>
+			
+			<div id="alphabet"></div>
+			
+			<div style="clear: both"></div>
+			
+		</div>
+		
+		
+		<div id="right_side"><img src="img/ad.jpg" /></div>
+		<div style="clear: both"></div>
+		
+		<a href="#"><div class="navigationButtons">GTA WEB</div></a href="#"><div class="navigationButtons">O AUTORZE</div><div style="clear: both"></div>
+		<div id="footer">Bartosz Mężyk &copy; 2021 Wszelkie prawa zastrzeżone</div>
+	
+	</div>
+</body>
